@@ -22,7 +22,7 @@ a:hover{
     color:#00ffff;
 }
 .text-primary{
-    color:#00ffff!important;
+    color:rgba(5, 10, 10, 0.5)!important;/*Changes main color of the website*/
 }
 h1,h2,h3,h4,h5,h6{
     font-weight:700;
@@ -73,7 +73,10 @@ section h3.section-subheading{
     background:#00ffff;
     text-shadow:none;
 }
-::selection{background:#00ffff;text-shadow:none}
+::selection{
+    background:#00ffff;
+    text-shadow:none;
+}
 img::-moz-selection{
     background:0 0;
 }
@@ -91,7 +94,7 @@ img::-moz-selection{
     right:0;padding:13px;
     text-transform:uppercase;
     color:#fff;border:0;
-    background-color:#00ffff;
+    background-color:#212529;/*Change bg color of the menu button in small width devices*/
     font-family:var(--font-family-two);
 }
 #mainNav .navbar-brand{
@@ -143,7 +146,8 @@ header.masthead{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    background-size: cover
+    background-size: cover;
+    height: 100vh;
 }
 header.masthead .intro-text{
     padding-top:150px;
@@ -164,24 +168,24 @@ header.masthead .intro-text .intro-heading{
     font-family:var(--font-family-two);
 }
 @media (min-width:768px){
-header.masthead .intro-text{
-    padding-top:300px;
-    padding-bottom:200px
-}
-header.masthead .intro-text .intro-lead-in{
-    font-size:40px;
-    font-style:italic;
-    line-height:40px;
-    margin-bottom:25px;
-    font-family:var(--font-family-three);
-}
-header.masthead .intro-text .intro-heading{
-    font-size:75px;
-    font-weight:700;
-    line-height:75px;
-    margin-bottom:50px;
-    font-family:var(--font-family-two);
-}
+    header.masthead .intro-text{
+        padding-top:300px;
+        padding-bottom:200px
+    }
+    header.masthead .intro-text .intro-lead-in{
+        font-size:40px;
+        font-style:italic;
+        line-height:40px;
+        margin-bottom:25px;
+        font-family:var(--font-family-three);
+    }
+    header.masthead .intro-text .intro-heading{
+        font-size:75px;
+        font-weight:700;
+        line-height:75px;
+        margin-bottom:50px;
+        font-family:var(--font-family-two);
+    }
 }
 .service-heading{
     margin:15px 0;
@@ -213,7 +217,8 @@ header.masthead .intro-text .intro-heading{
     margin-top:-12px;
     text-align:center;color:#fff}
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
-    margin-top:-12px}
+    margin-top:-12px;
+}
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
     margin:0;
 }
@@ -222,11 +227,11 @@ header.masthead .intro-text .intro-heading{
     margin:0 auto;
     padding:25px;
     text-align:center;
-    background-color:#fff
+    background-color:#fff;
 }
 #portfolio .portfolio-item .portfolio-caption h4{
     margin:0;
-    text-transform:none
+    text-transform:none;
 }
 #portfolio .portfolio-item .portfolio-caption p{
     font-size:16px;
@@ -235,7 +240,11 @@ header.masthead .intro-text .intro-heading{
     font-family:var(--font-family-three);
 }
 #portfolio *{z-index:2}
-@media (min-width:767px){#portfolio .portfolio-item{margin:0 0 30px}}
+@media (min-width:767px){
+    #portfolio .portfolio-item{
+        margin:0 0 30px;
+    }
+}
 
 section#contact{
     background-color:#212529;
@@ -316,5 +325,5 @@ ul.social-buttons li a{
     background-color:#212529;
 }
 ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
-    background-color:#00ffff;
+    background-color:#212529;
 }
